@@ -21,6 +21,12 @@ services:
       - my-mongodb
     networks:
       - my-network
+    # restart: always
+
+    # 如果要順便 build
+    # build:
+    #   context: . # 對應路徑
+    #   dockerfile: Dockerfile # 對應檔案
 
 volumes:
   mongodbdata:

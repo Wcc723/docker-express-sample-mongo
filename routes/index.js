@@ -13,4 +13,8 @@ router.get('/count', (req, res) => {
   res.render('count', { count }); // 傳遞計數器到 EJS 模板
 });
 
+router.get('/error', (req, res) => {
+  process.exit(1);
+});
+
 module.exports = router;
